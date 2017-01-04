@@ -7,7 +7,7 @@ class Film(models.Model):
     name = models.CharField(max_length=50, verbose_name=u'Название')
     genre = models.CharField(max_length=40, verbose_name=u'Жанр')
     state = models.CharField(max_length=30, verbose_name=u'Старана')
-    file = models.FileField()
+    file_film = models.FileField()
 
 class Information(models.Model):
     first_name = models.CharField(max_length=30, verbose_name=u'Имя')
